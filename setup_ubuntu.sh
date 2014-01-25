@@ -1,7 +1,6 @@
-apt-get install python-virtualenv nginx fortune cowsay
+apt-get install python-virtualenv fortune cowsay
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-cp default /etc/nginx/sites-enabled/default
 cp /usr/games/fortune /bin
 cp /usr/games/cowsay /bin

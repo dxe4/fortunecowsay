@@ -1,3 +1,2 @@
 . ./venv/bin/activate
-gunicorn -w 4 -b 127.0.0.1:5000 run:app --daemon
-/etc/init.d/nginx start
+gunicorn -w 4 -b 0.0.0.0:80 run:app --daemon
