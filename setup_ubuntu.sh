@@ -1,6 +1,6 @@
 apt-get install python-virtualenv nginx
 virtualenv -p /usr/bin/python3 venv
-source venv/bin/activate
+. ./venv/bin/activate
 pip install -r requirements.txt
 echo "
 upstream app_server_djangoapp {
