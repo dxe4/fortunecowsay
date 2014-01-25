@@ -16,7 +16,7 @@ server {
         proxy_redirect off;
 
         if (!-f $request_filename) {
-            proxy_pass server;
+            proxy_pass http://server;
             break;
         }
     }
